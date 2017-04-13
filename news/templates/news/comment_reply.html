@@ -1,0 +1,12 @@
+<form class="form-inline" method="post" action = {% url 'news:comment_replies' %}>
+{% csrf_token %}
+ <div class="form-actions text-left">
+ {{form.title}}
+ {{form.content}}
+ {{form.comment_replies}}
+ {{form.article}}
+</div>
+<div class="form-actions text-left">
+<button type="submit"  class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" value="Post">Submit</button>
+</div>
+</form>

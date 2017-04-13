@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}testimonial{% endblock %}
+{% load url from future %}
+{% load i18n staticfiles %}
+
+
+{% block maincontent %}
+<section>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <h2>
+        testimonial
+      </h2>
+
+      <p>
+        {{contents}}
+      </p>
+
+
+    </div>
+  </section>
+{% endblock %}
+
+

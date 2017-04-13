@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block title %}Testimonials | Bet on Combat{% endblock %}
+{% block fb_title %}Testimonials | Bet on Combat{% endblock %}
+{% block fb_description %}Bet on Combat News.{% endblock %}
+{% block nav-news-class %}active{% endblock %}
+{% block nav-news-class-mobile %}active{% endblock %}
+
+{% block maincontent %}
+
+<style type="text/css">
+
+#testimonialStyle{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.testimonial-content{
+	position: relative;
+	margin: auto;
+	height: 200px;
+	width: 80%;
+}
+.testimonial-footer {
+    position: relative;
+	margin: auto;
+	height: 200px;
+	width: 80%;
+}
+</style>
+
+<section id="testimonialStyle">
+    <div class="mdl-tabs">
+        <h2 style="margin-bottom: 30px;">
+          What Members Are Saying?
+        </h2>
+
+        <div class="testimonials-container">
+                 {% for testimonial in testimonials %}
+                    {% include 'testimonial/_testimonial.html'%}
+                 {% endfor %}
+        </div>
+
+        <div class="testimonial-footer">
+           <I><h6 style="margin-bottom: 50px; text-align: left;">These are just a few of the many saGsfied beVors who have followed our winning advice over
+                        the years, as well as investors who have put their hard earned money into our growing fund. You
+                        can join the club by signing up for a Premium membership today. Of course, you can always tail
+                        my free picks or check out my documented beYng track record to get a taste of the type of
+                        results you will get by following the plays of a true professional MMA beVor.
+            </h6></I>
+        </div>
+     </div>
+</section>
+{% endblock %}
