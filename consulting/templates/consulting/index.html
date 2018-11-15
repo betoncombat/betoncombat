@@ -46,7 +46,7 @@
                      <br>
                      <br>
                      <hr />
-                     <h5 class="text-center"><strong>$49.99/Week</strong></h5>
+                     <h5 class="text-center"><strong>$99.99/Week</strong></h5>
                      <div class="text-center subscribe-form">
                            {% if not user.is_authenticated %}
                              <a href="{% url 'account_signup' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Sign Up</a>
@@ -55,7 +55,7 @@
                                        {% csrf_token %}
                                     <input name="stripe_token" type="hidden" />
                                     <select id="id_plan" name="plan" style="visibility:hidden">
-                                        <option value="weekly" selected="selected">Premium Account ($49/week)</option>
+                                        <option value="weekly" selected="selected">Premium Account ($99/week)</option>
                                     </select>
                                     <div class="text-center">
                                     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple--effect">Subscribe</button>
@@ -81,7 +81,7 @@
                           <li>Profit or you get another month absolutely free!</li>
                       </ul>
                       <hr />
-                      <h5 class="text-center"><strong>$99.99/Month</strong></h5>
+                      <h5 class="text-center"><strong>$249.99/Month</strong></h5>
                       <div class="text-center subscribe-form">
                             {% if not user.is_authenticated %}
                               <a href="{% url 'account_signup' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Sign Up</a>
@@ -90,7 +90,7 @@
                                         {% csrf_token %}
                                         <input name="stripe_token" type="hidden" />
                                         <select id="id_plan" name="plan" style="visibility:hidden" >
-                                            <option value="monthly" selected="selected">Premium Account ($99/month)</option>
+                                            <option value="monthly" selected="selected">Premium Account ($249/month)</option>
                                         </select>
                                         <div class="text-center">
                                         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple--effect">Subscribe</button>
@@ -116,7 +116,7 @@
                            <li>Profit or you get another month absolutely free!</li>
                        </ul>
                        <hr />
-                       <h5 class="text-center"><strong>$999.99/Year</strong></h5>                                                            
+                       <h5 class="text-center"><strong>$2500.00/Year</strong></h5>                                                            
                       <div class="text-center subscribe-form">
                           {% if not user.is_authenticated %}
                           <a href="{% url 'account_signup' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Sign Up</a>
@@ -125,7 +125,7 @@
                              {% csrf_token %}
                              <input name="stripe_token" type="hidden" />
                              <select id="id_plan" name="plan" style="visibility:hidden">
-                                 <option value="yearly" selected="selected">Premium Account ($999/year)</option>
+                                 <option value="yearly" selected="selected">Premium Account ($2500.00/year)</option>
                              </select>
                              <div class="text-center">
                                  <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Subscribe</button>
